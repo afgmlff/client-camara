@@ -39,7 +39,7 @@ function App() {
    * Fetch para o backend, onde requisita-se a lista de deputados da API da câmara
    */
   useEffect(() => {
-    fetch("/data").then(
+    fetch("https://server-camara.vercel.app/data").then(
       response => response.json()
     ).then(
       data => {
@@ -72,7 +72,7 @@ function App() {
       while (retryCount <= 3) {     //Retry por conta da instabilidade no momento dos testes realizados
         
           try {
-              const response = await axios.post('/sendId', { id })    //depois de várias tentativas, foi necessário utilizar async/await 
+              const response = await axios.post('https://server-camara.vercel.app/sendId', { id })    //depois de várias tentativas, foi necessário utilizar async/await 
               if (response.status === 500) {
                   retryCount++;
                   console.log(`Erro 500. Tentando conectar novamente...`)
