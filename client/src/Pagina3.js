@@ -45,7 +45,7 @@ function Pagina3() {
    * Fetch para o backend, onde são requisitados os dados da API da câmara
    */
   useEffect(() => {
-    fetch("/uflist").then(
+    fetch("https://server-camara.vercel.app/uflist").then(
       response => response.json()
     ).then(
       data => {
@@ -82,7 +82,7 @@ function Pagina3() {
       while (retryCount <= 3) {
         
           try {
-              const response = await axios.post('/ufsearch', { id })
+              const response = await axios.post('https://server-camara.vercel.app/ufsearch', { id })
               if (response.status === 500) {
                   retryCount++;
                   console.log(`Erro 500. Tentando conectar novamente...`)
