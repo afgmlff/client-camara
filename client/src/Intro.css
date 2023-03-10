@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.esquerda{
+    /*alinhar verticalmente o texto da esquerda*/
+}
+
+.introImg {
+    max-width: 100%;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+}
+
+.parag{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: rgb(138, 138, 138);
+}
+
+.linkAPI{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: rgb(0, 0, 0);
+}
+
+.material-symbols-outlined {
+    position:relative;
+    top:2px;
+    margin-right: 5px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 500,
+    'GRAD' -25,
+    'opsz' 40
+  }

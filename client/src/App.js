@@ -6,6 +6,7 @@ import Pagina2 from './Pagina2';
 import Pagina3 from './Pagina3';
 import './Pagina2.css'
 import Footer from './Footer';
+import Intro from './Intro';
 
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom' 
 
@@ -163,6 +164,10 @@ function App() {
 
           <Route path="/pagina3">
               <Pagina3 />
+          </Route>
+
+          <Route exact path="/intro">
+              <Intro />
           </Route>
         </Switch>            
 

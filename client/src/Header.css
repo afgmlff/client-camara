@@ -15,8 +15,7 @@ main {
 }
 
 header {
-    background: #0095a8;
-    height: 140px;
+    height: 75px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
     padding-left: 10vw;
@@ -32,26 +31,11 @@ h1{
         font-style: italic;
 }
 
-@media (max-width: 1636px) {
-    h1{
-        bottom: 23%;
-    }
-}
 
-@media (max-width: 712px) {
-    h1{
-        bottom: 38%;
-        font-size: 36px;
-    }
-
-    header{
-        height: 180px;
-    }
-}
 
 li{
     list-style-type: none;
-    padding-left: 4vw;
+    padding-left: 1.2vw;
 }
 
 ul > li {
@@ -62,7 +46,8 @@ ul > li {
     position: absolute;
     bottom: 8%;
     right: 10%;
-    font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    font-family: Arial;
 }
