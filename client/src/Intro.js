@@ -8,7 +8,7 @@ function Intro() {
   return (
     <>
         <div className='container-fluid'>
-            <div class="row">
+            <div class="row align-items-center">
                 <div className='col-lg-5 esquerda'>
                     <p className='title'>Dados Abertos</p>
                     <p className='parag'>Uma aplicação web que permite a pesquisa de informações sobre deputados federais da 56ª legislatura, a partir de um serviço de Dados Abertos da Câmara dos Deputados</p>

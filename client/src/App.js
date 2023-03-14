@@ -111,7 +111,7 @@ function App() {
         <div className='consulta'>
           {(typeof dados.dados === 'undefined') ? ( //Apresenta uma mensagem durante o período de tentativas de fetch na API, pro caso do servidor possuir muitas requisições...
 
-            <img className="loadingInitial" src='/Rolling-1s-200px.gif' />
+<div class="loader"></div>
           ) : (
             <>
               <input ref={inputRef} className='searchBar' type="text" placeholder='Insira o nome de um deputado' onChange={getValue} list="data" />
@@ -125,7 +125,7 @@ function App() {
         </div>
 
         <div>
-          {isLoading ? <img className="loadingNewQ" src='/Rolling-1s-200px.gif' /> : <></>}
+          {isLoading ? <div class="loader"></div> : <></>}
         </div>
 
         <div className='resultadoConsulta'>
@@ -158,7 +158,7 @@ function App() {
         </div>
         </Route>
         
-          <Route exact path="/">
+          <Route exact path="/pagina1">
               <Pagina2 />
           </Route>
 
@@ -166,7 +166,7 @@ function App() {
               <Pagina3 />
           </Route>
 
-          <Route exact path="/intro">
+          <Route exact path="/">
               <Intro />
           </Route>
         </Switch>            
